@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1580733738022-978767d5ff56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80");
+  background-size: cover;
+  background-position: top center;
+}
+
+.text-up {
+  padding: 15px;
+  color: antiquewhite;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.text-small {
+  font-size: 12px;
+  color: azure;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(77, 77, 77, 0.3),
+    rgba(82, 82, 82, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  max-width: 280px;
+  outline: none;
+  background-color: rgb(212, 212, 212);
+  border-radius: 3px;
+  color: black;
+  border-bottom: 3px solid rgb(255, 174, 149);
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s ease-out;
+}
+
+header input:focus {
+  background-color: rgb(255, 254, 182);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.location .city {
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: aliceblue;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: aliceblue;
+  font-size: 102px;
+  font-weight: 900px;
+  margin: 30px 0px;
+  text-shadow: 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: aliceblue;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+}
+
+.current .hi-low {
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.5);
+}
